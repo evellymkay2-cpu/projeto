@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Um convite especial 💕</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Corações do fundo -->
+    <div class="hearts"></div>
+
+    <!-- PRIMEIRA TELA -->
+    <main class="container" id="telaInicial">
+
+        <div class="card">
+
+            <div class="heart-icon">💕</div>
+
+            <h1>Quer sair comigo?</h1>
+
+            <p>
+                O que você acha de termos um encontro? 🥰
+            </p>
+
+            <div class="botoes">
+
+                <button id="simBtn">
+                    Sim! 😍
+                </button>
+
+                <button id="naoBtn">
+                    Não 😢
+                </button>
+
+            </div>
+
+            <!-- Mensagem que aparece ao tentar clicar no NÃO -->
+            <div id="mensagemNao"></div>
+
+        </div>
+
+    </main>
+
+
+    <!-- SEGUNDA TELA -->
+    <main class="container escondido" id="telaEncontro">
+
+        <div class="card encontro">
+
+            <div class="heart-icon">
+                💖
+            </div>
+
+            <h1>Eu sabia que você ia aceitar! 😍</h1>
+
+            <p>
+                Agora só falta escolher quando e onde será nosso encontro. 💕
+            </p>
+
+            <div class="formulario">
+
+                <label for="data">
+                    📅 Escolha a data:
+                </label>
+
+                <input
+                    type="date"
+                    id="data"
+                >
+
+                <label for="hora">
+                    ⏰ Escolha o horário:
+                </label>
+
+                <input
+                    type="time"
+                    id="hora"
+                >
+
+                <label for="local">
+                    📍 Escolha o local:
+                </label>
+
+                <input
+                    type="text"
+                    id="local"
+                    placeholder="Ex: Restaurante, cinema..."
+                >
+
+                <button id="confirmarBtn">
+                    Marcar nosso encontro 💕
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- TERCEIRA TELA -->
+    <main class="container escondido" id="telaConfirmacao">
+
+        <div class="card">
+
+            <div class="heart-icon">
+                💕
+            </div>
+
+            <h1>Encontro marcado! 🥰</h1>
+
+            <p id="resumoEncontro"></p>
+
+            <div class="confirmacao">
+                ❤️ Estou ansioso(a) para nosso encontro! ❤️
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
